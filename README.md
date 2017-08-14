@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> Array<IterableType<T>> -> IterableType
+> Array<IterableType> -> IterableType
 
 Merges a list of iterables (of the same type) into a single iterable.
 
