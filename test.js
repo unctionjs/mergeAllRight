@@ -3,7 +3,16 @@ import {test} from "tap"
 
 import mergeAllRight from "./index"
 
-test(({same, end}) => {
+test("empty", ({same, end}) => {
+  same(
+    mergeAllRight([]),
+    []
+  )
+
+  end()
+})
+
+test("Array", ({same, end}) => {
   same(
     mergeAllRight([["0"], ["1"], ["2"]]),
     ["0", "1", "2"]
@@ -12,7 +21,7 @@ test(({same, end}) => {
   end()
 })
 
-test(({same, end}) => {
+test("Object", ({same, end}) => {
   same(
     mergeAllRight([{aaa: "aaa"}, {bbb: "bbb"}, {ccc: "ccc"}]),
     {
