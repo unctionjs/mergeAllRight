@@ -1,7 +1,7 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 
-import mergeAllRight from "./index";
+import mergeAllRight from "./";
 
 test("empty", ({same, end}) => {
   same(
