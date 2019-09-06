@@ -1,5 +1,5 @@
 
-import mergeAllRight from "./index.ts";
+import mergeAllRight from "./index";
 
 test("empty", () => {
   expect(mergeAllRight([])).toEqual([]);
